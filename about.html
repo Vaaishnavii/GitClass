@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Finance Tracker</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* Subtle light grey background */
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50; /* Deep blue background */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12; /* Highlight color for hover effect */
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center; /* Center-align main content */
+        }
+
+        h2 {
+            color: #2c3e50; /* Darker color for headings */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            background-color: white; /* White background for content */
+            border-radius: 12px; /* Rounded corners */
+            padding: 40px;
+            margin: 0 auto;
+            max-width: 900px; /* Maximum width for content */
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+            text-align: left; /* Align text to the left */
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px; /* Gap between columns */
+        }
+
+        .feature {
+            background-color: #ecf0f1; /* Light grey background for features */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners for feature cards */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .feature:hover {
+            background-color: #f39c12; /* Change background on hover */
+            transform: translateY(-5px); /* Slight lift on hover */
+            color: white;
+        }
+
+        .feature h4 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #555;
+            font-size: 1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50; /* Dark blue background */
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Finance Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="income.html">Income Tracker</a></li>
+                <li><a href="expense.html">Expense Tracker</a></li>
+                <li><a href="budget.html">Budget Overview</a></li>
+                <li><a href="savings.html">Savings Goals</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>About Finance Tracker</h2>
+        <div class="content">
+            <p>
+                Welcome to Finance Tracker, your personal finance management tool designed to help you effortlessly track your income, manage expenses, and achieve your savings goals. Finance Tracker provides an easy-to-use platform to take control of your financial health.
+            </p>
+
+            <h3>Key Features</h3>
+            <div class="features-grid">
+                <div class="feature">
+                    <h4>Income Tracking</h4>
+                    <p>Easily log and categorize your income sources to keep a clear view of your earnings.</p>
+                </div>
+                <div class="feature">
+                    <h4>Expense Management</h4>
+                    <p>Monitor your spending habits by recording your expenses in various categories.</p>
+                </div>
+                <div class="feature">
+                    <h4>Budget Planning</h4>
+                    <p>Create budgets for different spending categories and stay within your financial limits.</p>
+                </div>
+                <div class="feature">
+                    <h4>Savings Goals</h4>
+                    <p>Set and track your savings goals to achieve your financial objectives.</p>
+                </div>
+                <div class="feature">
+                    <h4>Reports and Analysis</h4>
+                    <p>Generate detailed reports to analyze your financial trends and make informed decisions.</p>
+                </div>
+                <div class="feature">
+                    <h4>Multi-Currency Support</h4>
+                    <p>Track your finances in your preferred currency for a personalized experience.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Finance Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

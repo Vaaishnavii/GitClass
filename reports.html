@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Light grey background */
+        }
+
+        header {
+            background: #35424a; /* Dark background for header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4; /* Lighten on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center-align the text */
+        }
+
+        h2 {
+            color: #35424a; /* Dark color for headings */
+        }
+
+        .report-container {
+            background-color: white; /* White background for reports */
+            border: 1px solid #ddd; /* Light border for reports */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px; /* Maximum width of the report container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: left; /* Left align text */
+        }
+
+        .report-section {
+            margin-bottom: 20px; /* Space between report sections */
+        }
+
+        .report-section h3 {
+            color: #35424a; /* Dark color for section headings */
+            margin-bottom: 10px; /* Space below section headings */
+        }
+
+        table {
+            width: 100%; /* Full width table */
+            border-collapse: collapse; /* Collapse borders */
+            margin-top: 10px; /* Space above table */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Light border for cells */
+            padding: 10px; /* Padding for cells */
+            text-align: left; /* Left align text in cells */
+        }
+
+        th {
+            background-color: #35424a; /* Dark background for table headers */
+            color: white; /* White text for table headers */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a; /* Dark background for footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reports</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="income.html">Income Tracker</a></li>
+                <li><a href="expense.html">Expense Tracker</a></li>
+                <li><a href="budget.html">Budget Overview</a></li>
+                <li><a href="savings.html">Savings Goals</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Financial Reports</h2>
+        <p>Analyze your income and expenses.</p>
+
+        <div class="report-container">
+            <div class="report-section">
+                <h3>Monthly Income Overview</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Salary</td>
+                            <td>$3,500</td>
+                        </tr>
+                        <tr>
+                            <td>Freelance</td>
+                            <td>$1,200</td>
+                        </tr>
+                        <tr>
+                            <td>Investments</td>
+                            <td>$300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="report-section">
+                <h3>Monthly Expense Overview</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rent</td>
+                            <td>$1,200</td>
+                        </tr>
+                        <tr>
+                            <td>Groceries</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <td>Utilities</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Entertainment</td>
+                            <td>$200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="report-section">
+                <h3>Summary</h3>
+                <p>Total Income: <strong>$5,000</strong></p>
+                <p>Total Expenses: <strong>$1,850</strong></p>
+                <p><strong>Net Savings: $3,150</strong></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Finance Tracker</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9; /* Light background */
+            color: #333; /* Dark text color */
+        }
+
+        header {
+            background: #35424a; /* Dark background for header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4; /* Lighten on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center-align the text */
+        }
+
+        h2 {
+            color: #35424a; /* Dark color for headings */
+        }
+
+        .faq-container {
+            background-color: white; /* White background for FAQ section */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px; /* Maximum width of the FAQ container */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+            text-align: left; /* Left align text */
+        }
+
+        .faq {
+            margin-bottom: 15px; /* Space between FAQs */
+            border: 1px solid #ddd; /* Light border for each FAQ */
+            border-radius: 8px; /* Rounded corners for each FAQ */
+            padding: 15px; /* Padding inside each FAQ */
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+
+        .faq:hover {
+            background-color: #f1f1f1; /* Light background on hover */
+        }
+
+        .faq h3 {
+            margin: 0;
+            cursor: pointer; /* Change cursor for clickable FAQ titles */
+            transition: color 0.3s; /* Smooth color transition */
+            font-size: 1.1em; /* Slightly larger font for FAQ titles */
+        }
+
+        .faq h3:hover {
+            color: #007bff; /* Change color on hover */
+        }
+
+        .faq p {
+            display: none; /* Hide answers by default */
+            margin-top: 5px; /* Space above the answer */
+            font-size: 0.95em; /* Slightly smaller font for answers */
+            color: #666; /* Lighter color for answers */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a; /* Dark background for footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block; /* Stack navigation items on smaller screens */
+                margin: 10px 0; /* Margin for stacked items */
+            }
+        }
+    </style>
+    <script>
+        // JavaScript to toggle FAQ answers
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqTitles = document.querySelectorAll('.faq h3');
+            faqTitles.forEach(title => {
+                title.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Help</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="income.html">Income Tracker</a></li>
+                <li><a href="expense.html">Expense Tracker</a></li>
+                <li><a href="budget.html">Budget Overview</a></li>
+                <li><a href="savings.html">Savings Goals</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Help & Support</h2>
+        <p>Frequently asked questions and support.</p>
+
+        <div class="faq-container">
+            <div class="faq">
+                <h3>1. How do I track my income?</h3>
+                <p>Your income can be tracked by navigating to the Income Tracker page and entering your income source and amount.</p>
+            </div>
+            <div class="faq">
+                <h3>2. How do I add an expense?</h3>
+                <p>To add an expense, go to the Expense Tracker page and fill out the expense form with the necessary details.</p>
+            </div>
+            <div class="faq">
+                <h3>3. Can I set a budget?</h3>
+                <p>Yes! You can set a budget in the Budget Overview section where you can view and manage your budget effectively.</p>
+            </div>
+            <div class="faq">
+                <h3>4. How do I contact support?</h3>
+                <p>You can reach out to our support team via the Contact page. We're here to help!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Finance Tracker</p>
+    </footer>
+</body>
+</html>

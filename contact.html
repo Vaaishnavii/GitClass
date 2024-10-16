@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background */
+        }
+
+        header {
+            background: #35424a; /* Dark background for header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4; /* Lighten on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center-align the text */
+        }
+
+        h2 {
+            color: #35424a; /* Dark color for headings */
+        }
+
+        .content {
+            background-color: white; /* White background for content section */
+            border: 1px solid #ddd; /* Light border for content section */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px; /* Maximum width of the content container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: left; /* Left align text */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; /* Stack form elements vertically */
+        }
+
+        label {
+            margin: 10px 0 5px; /* Space between labels and inputs */
+        }
+
+        input, textarea {
+            padding: 10px; /* Inner spacing for inputs */
+            border: 1px solid #ccc; /* Light border for inputs */
+            border-radius: 4px; /* Rounded corners for inputs */
+            margin-bottom: 15px; /* Space between inputs */
+        }
+
+        button {
+            padding: 10px;
+            background-color: #35424a; /* Dark button background */
+            color: white; /* White text */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners for button */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: #4e5d67; /* Lighter shade on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a; /* Dark background for footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-top: 20px; /* Space above contact info */
+            text-align: center; /* Center align contact info */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="income.html">Income Tracker</a></li>
+                <li><a href="expense.html">Expense Tracker</a></li>
+                <li><a href="budget.html">Budget Overview</a></li>
+                <li><a href="savings.html">Savings Goals</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Get in Touch</h2>
+        <div class="content">
+            <p>If you have any questions or feedback, feel free to reach out to us using the form below.</p>
+            <form action="sent_successful.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-info">
+                <h3>Other Ways to Contact Us</h3>
+                <p>Email: support@financetracker.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Follow us on social media:</p>
+                <p>
+                    <a href="#" style="color: #35424a; text-decoration: none;">Facebook</a> | 
+                    <a href="#" style="color: #35424a; text-decoration: none;">Twitter</a> | 
+                    <a href="#" style="color: #35424a; text-decoration: none;">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Finance Tracker</p>
+    </footer>
+</body>
+</html>

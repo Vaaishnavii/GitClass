@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Light grey background */
+        }
+
+        header {
+            background: #35424a; /* Dark background for header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4; /* Lighten on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center-align the text */
+            background-image: url('background.jpeg'); /* Set your image path here */
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            min-height: 400px; /* Minimum height to ensure content visibility */
+            color: white; /* Set text color to white for better contrast */
+        }
+
+        h2 {
+            color: #35424a; /* Dark color for headings */
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+            border: 1px solid #ddd; /* Light border for form */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            margin: 20px auto; /* Center the form container */
+            max-width: 400px; /* Maximum width of the form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: left; /* Left-align text within form */
+        }
+
+        label {
+            display: block; /* Block layout for labels */
+            margin-bottom: 8px; /* Space below labels */
+            color: #35424a; /* Dark color for labels */
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%; /* Full width inputs */
+            padding: 10px; /* Padding for inputs */
+            margin-bottom: 15px; /* Space below inputs */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 4px; /* Rounded corners for inputs */
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+        button {
+            background-color: #35424a; /* Dark button background */
+            color: white; /* White text on button */
+            padding: 10px 15px; /* Padding for button */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners for button */
+            cursor: pointer; /* Pointer cursor for button */
+            transition: background-color 0.3s; /* Smooth background change */
+            width: 100%; /* Full width button */
+        }
+
+        button:hover {
+            background-color: #2c3e50; /* Darker on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a; /* Dark background for footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .info {
+            margin-top: 20px;
+            color: #666; /* Grey text for info */
+            font-size: 0.9em; /* Smaller font size */
+        }
+
+        .summary {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            max-width: 700px; /* Increased max width */
+            margin: 20px auto;
+        }
+
+        .summary h3 {
+            color: #35424a;
+        }
+
+        .summary ul {
+            padding-left: 20px; /* Indent for list items */
+        }
+
+        .summary ul li {
+            margin-bottom: 10px; /* Space between list items */
+            color: black; /* Change text color to black */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the contents */
+        }
+
+        @media (min-width: 768px) {
+            .form-container {
+                max-width: 500px; /* Increase max width on larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="income.html">Income Tracker</a></li>
+                <li><a href="budget.html">Budget Overview</a></li>
+                <li><a href="savings.html">Savings Goals</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Track Your Expenses</h2>
+        <div class="form-container">
+            <form action="success.html" method="get"> <!-- Change this line -->
+                <label for="expense">Expense:</label>
+                <input type="text" id="expense" name="expense" placeholder="e.g., Groceries" required>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="e.g., 150" required>
+                <button type="submit">Add Expense</button>
+            </form>
+            <p class="info">Please enter your expense details accurately. This will help you manage your finances effectively.</p>
+        </div>
+
+        <div class="summary">
+            <h3>Recent Expenses</h3>
+            <ul>
+                <li><strong>Groceries:</strong> $150</li>
+                <li><strong>Utilities:</strong> $75</li>
+                <li><strong>Transport:</strong> $40</li>
+                <li><strong>Entertainment:</strong> $60</li>
+            </ul>
+            <p><strong>Total Expenses:</strong> $325</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Finance Tracker</p>
+    </footer>
+</body>
+</html>

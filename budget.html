@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('income.jpg'); /* Background image */
+            background-size: cover; /* Cover entire background */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Fixed background while scrolling */
+            color: #333; /* Dark color for text */
+        }
+
+        header {
+            background: rgba(53, 66, 74, 0.8); /* Semi-transparent dark background for header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4; /* Lighten on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center-align the text */
+        }
+
+        h2 {
+            color: white; /* Light color for headings */
+        }
+
+        .overview-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border: 1px solid #ddd; /* Light border */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px; /* Maximum width of the overview */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .budget-item {
+            display: flex;
+            justify-content: space-between; /* Space between item and value */
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd; /* Divider line */
+        }
+
+        .budget-item:last-child {
+            border-bottom: none; /* No border for last item */
+        }
+
+        .total {
+            font-weight: bold; /* Bold for total */
+            color: #2c3e50; /* Dark color for total */
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(53, 66, 74, 0.8); /* Semi-transparent dark background for footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .chart {
+            margin-top: 30px;
+            text-align: left; /* Left align chart */
+            padding: 20px;
+            background-color: #fff; /* White background for chart */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart h3 {
+            color: #35424a; /* Dark color for chart title */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Budget Overview</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="income.html">Income Tracker</a></li>
+                <li><a href="expense.html">Expense Tracker</a></li>
+                <li><a href="savings.html">Savings Goals</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Budget Overview</h2>
+        <p>Visual representation of your budget.</p>
+        <div class="overview-container">
+            <h3>Budget Summary</h3>
+            <div class="budget-item">
+                <span>Monthly Income:</span>
+                <span>$4000</span>
+            </div>
+            <div class="budget-item">
+                <span>Fixed Expenses:</span>
+                <span>$1500</span>
+            </div>
+            <div class="budget-item">
+                <span>Variable Expenses:</span>
+                <span>$800</span>
+            </div>
+            <div class="budget-item">
+                <span>Savings:</span>
+                <span>$700</span>
+            </div>
+            <div class="budget-item">
+                <span>Remaining:</span>
+                <span>$1000</span>
+            </div>
+            <div class="total">
+                <span>Total Budget:</span>
+                <span>$4000</span>
+            </div>
+        </div>
+
+        <div class="chart">
+            <h3>Budget Breakdown</h3>
+            <p>Here's a visual representation of how your budget is allocated:</p>
+            <ul>
+                <li>Fixed Expenses: 38%</li>
+                <li>Variable Expenses: 20%</li>
+                <li>Savings: 17%</li>
+                <li>Remaining: 25%</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Finance Tracker</p>
+    </footer>
+</body>
+</html>
